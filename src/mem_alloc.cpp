@@ -31,6 +31,23 @@ MemoryAllocator::~MemoryAllocator() {
 
 }
 
+// TODO: Implement memory allocation logic in allocate().
+//       - Search the free list for a suitable block.
+//       - Split larger blocks if needed.
+//       - Return a pointer to the allocated memory.
+//       - Handle cases where no block is large enough.
+void* MemoryAllocator::allocate(size_t size) {
+  // TODO: Implement this function.
+  return nullptr;
+}
+
+// TODO: Implement memory deallocation logic in deallocate().
+//       - Mark the block as free.
+//       - Merge adjacent free blocks to reduce fragmentation.
+void MemoryAllocator::deallocate(void* ptr) {
+  // TODO: Implement this function.
+}
+
 // Debug function to print memory layout
 void MemoryAllocator::printMemoryLayout() {
   
@@ -43,5 +60,11 @@ void MemoryAllocator::printMemoryLayout() {
          << ", Size: " << current->size << " bytes]\n";
     current = current->next;
   }
+  
+  // TODO: Improve formatting for better readability.
+  // TODO: Optionally include memory addresses.
 }
+
+// TODO: Implement a method to check total allocated and free memory.
+// TODO: Implement memory defragmentation to compact free blocks.
 
